@@ -56,12 +56,12 @@ h6 {
   font-weight: 400;
 }
 
-h1 {
+h2 {
   color: hsl(var(--clr-dark-charcoal));
   font-size: 4rem;
 }
 
-h2 {
+h3 {
   color: hsl(var(--clr-nutmeg));
   font-size: 2.8rem;
   margin-bottom: 2.4rem;
@@ -234,10 +234,7 @@ ul > li::before {
   body {
     padding: 0;
   }
-  body {
-    padding: 0;
-  }
-  h1 {
+  h2 {
     font-size: 3.6rem;
   }
   .recipe {
