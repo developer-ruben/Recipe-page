@@ -52,7 +52,7 @@ h4,
 h5,
 h6 {
   font-family: "Young Serif", serif;
-  line-height: initial;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -213,11 +213,11 @@ ul > li::before {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top: 0;
   padding: 1rem;
-  border-top-left-radius: 0.8rem;
-  border-top-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
   background-color: hsl(var(--clr-white));
 }
 .attribution__link {
