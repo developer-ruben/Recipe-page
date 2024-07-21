@@ -127,7 +127,7 @@ ul > li::before {
   background-color: hsl(var(--clr-white));
   padding: 4rem;
   width: 100%;
-  max-width: 763px;
+  max-width: 736px;
   border-radius: 2.4rem;
   display: flex;
   flex-direction: column;
