@@ -169,6 +169,7 @@ strong {
   color: hsl(var(--clr-rose-800));
   font-weight: 600;
   font-size: var(--f3-size);
+  font-family: Outfit, sans-serif;
 }
 
 .recipe__list {
