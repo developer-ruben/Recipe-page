@@ -90,6 +90,7 @@ body {
   font-size: var(--f4-size);
   line-height: var(--f4-height);
   font-family: Outfit, sans-serif;
+  color: hsl(var(--clr-stone-600));
 }
 
 h1 {
@@ -106,10 +107,6 @@ h2 {
   font-size: var(--f2-size);
   line-height: var(--f2-height);
   font-family: "Young Serif", serif;
-}
-
-p {
-  color: hsl(var(--clr-stone-600));
 }
 
 strong {
@@ -145,7 +142,7 @@ strong {
 
 .recipe__cover {
   display: block;
-  margin-bottom: var(--spacing-400);
+  margin-bottom: var(--spacing-500);
   border-radius: 1.2rem;
   max-width: 100%;
   height: auto;
