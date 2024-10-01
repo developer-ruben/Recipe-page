@@ -1,0 +1,313 @@
+/* FONTS */
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+  font-family: "Outfit";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-family: "Outfit";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+  font-family: "Outfit";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-family: "Young Serif";
+}
+
+/* VARIABLES */
+
+:root {
+  --clr-white: 0, 0%, 100%;
+
+  --clr-stone-100: 30, 54%, 90%;
+  --clr-stone-150: 30, 18%, 87%;
+  --clr-stone-600: 30, 10%, 34%;
+  --clr-stone-900: 24, 5%, 18%;
+
+  --clr-brown-800: 14, 45%, 36%;
+
+  --clr-rose-800: 332, 51%, 32%;
+  --clr-rose-50: 330, 100%, 98%;
+
+  --spacing-1600: 12.8rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
+
+  --f1-size: 4rem;
+  --f1-height: 1;
+
+  --f2-size: 2.8rem;
+  --f2-height: 1;
+
+  --f3-size: 2rem;
+  --f3-height: 1;
+
+  --f4-size: 1.6rem;
+  --f4-height: 1.5;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* GENERAL */
+
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--clr-stone-100));
+  font-size: var(--f4-size);
+  line-height: var(--f4-height);
+  font-family: Outfit, sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: var(--f1-size);
+  line-height: var(--f1-height);
+  font-family: "Young Serif", serif;
+}
+
+h2 {
+  margin-bottom: var(--spacing-300);
+  color: hsl(var(--clr-brown-800));
+  font-weight: 400;
+  font-size: var(--f2-size);
+  line-height: var(--f2-height);
+  font-family: "Young Serif", serif;
+}
+
+p {
+  color: hsl(var(--clr-stone-600));
+}
+
+strong {
+  color: hsl(var(--clr-stone-600));
+}
+
+/* UTILITY */
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  position: absolute !important;
+  clip-path: inset(50%) !important; /* 2 */
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+/* RECIPE */
+
+.recipe {
+  margin: var(--spacing-1600) 0;
+  border-radius: 2.4rem;
+  background-color: hsl(var(--clr-white));
+  padding: var(--spacing-500);
+  width: 100%;
+  max-width: 736px;
+}
+
+.recipe__cover {
+  display: block;
+  margin-bottom: var(--spacing-400);
+  border-radius: 1.2rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.recipe__title {
+  margin-bottom: var(--spacing-300);
+  color: hsl(var(--clr-stone-900));
+}
+
+.recipe__header .recipe__text {
+  margin-bottom: var(--spacing-400);
+}
+
+.recipe__aside {
+  background-color: hsl(var(--clr-rose-50));
+  padding: var(--spacing-300);
+  border-radius: 1.2rem;
+}
+
+.recipe__aside .recipe__subtitle {
+  margin-bottom: var(--spacing-200);
+  height: var(--f3-height);
+  color: hsl(var(--clr-rose-800));
+  font-weight: 600;
+  font-size: var(--f3-size);
+}
+
+.recipe__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+
+.recipe__list--numbered {
+  counter-reset: my-awesome-counter;
+}
+
+.recipe__list--numbered .recipe__item {
+  align-items: start;
+  counter-increment: my-awesome-counter;
+}
+
+.recipe__list--numbered .recipe__item::before {
+  margin-right: 2rem;
+  background-color: unset;
+  width: unset;
+  height: unset;
+  content: counter(my-awesome-counter) ".";
+  color: hsl(var(--clr-brown-800));
+  font-weight: 700;
+  font-size: var(--f4-size);
+  line-height: var(--f4-height);
+}
+
+.recipe__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: var(--spacing-100);
+}
+
+.recipe__item::before {
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 2.8rem;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-rose-800));
+  width: 4px;
+  height: 4px;
+  content: "";
+}
+
+.recipe__divider {
+  border: 0;
+  background-color: hsl(var(--clr-stone-150));
+  width: 100%;
+  height: 1px;
+}
+
+.recipe__section {
+  margin: var(--spacing-400) 0;
+}
+
+.recipe__section:last-child {
+  margin-bottom: 0;
+}
+
+.recipe-table {
+  margin-top: var(--spacing-300);
+  width: 100%;
+  text-align: left;
+}
+
+.recipe-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-200);
+  border-bottom: 1px solid hsl(var(--clr-stone-150));
+  padding: var(--spacing-150) 0;
+}
+
+.recipe-table__row:first-child {
+  padding-top: 0;
+}
+
+.recipe-table__row:last-child {
+  border-bottom: 0;
+}
+
+.recipe-table__heading {
+  padding-left: var(--spacing-400);
+  color: hsl(var(--clr-stone-600));
+  font-weight: 400;
+}
+
+.recipe-table__cell {
+  color: hsl(var(--clr-brown-800));
+  font-weight: 700;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 1rem 0 0;
+  background-color: hsl(var(--clr-white));
+  padding: var(--spacing-150);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution__link {
+  color: hsl(var(--clr-brown-800));
+  text-decoration: none;
+}
+
+.attribution__link:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 425px) {
+  :root {
+    --f1-size: 3.6rem;
+  }
+
+  .recipe {
+    margin: 0;
+    border-radius: 0;
+    padding: 0 0 var(--spacing-500) 0;
+  }
+
+  .recipe__header-content {
+    padding: 0 var(--spacing-400);
+  }
+
+  .recipe__section {
+    padding: 0 var(--spacing-400);
+  }
+
+  .attribution {
+    display: none;
+  }
+}
