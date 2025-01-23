@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <meta
+      name="description"
+      content="Learn how to make a simple omelette with our step-by-step recipe. Quick and easy to prepare, perfect for breakfast, lunch, or dinner."
+    />
+    <meta
+      name="keywords"
+      content="Omelette recipe, Easy omelette, Quick recipes, Egg recipes, Breakfast ideas"
+    />
+    <meta name="author" content="Ruben de Man" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="recipe" aria-labelledby="recipe-title">
+        <img
+          class="recipe__cover"
+          src="./assets/images/image-omelette.jpeg"
+          width="536"
+          height="300"
+          alt="A freshly cooked omelette served on a plate"
+        />
+        <div class="recipe__content">
+          <section class="recipe__top">
+            <h1 class="recipe__title" id="recipe-title">
+              Simple Omelette Recipe
+            </h1>
+            <p>
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
+            </p>
+          </section>
+          <aside class="recipe__aside">
+            <h2 class="recipe__subtitle">Preparation time</h2>
+            <ul class="recipe__list recipe__list--unordered">
+              <li class="recipe__item">
+                <span><strong>Total:</strong> Approximately 10 minutes</span>
+              </li>
+              <li class="recipe__item">
+                <span><strong>Preparation:</strong> 5 minutes</span>
+              </li>
+              <li class="recipe__item">
+                <span><strong>Cooking:</strong> 5 minutes</span>
+              </li>
+            </ul>
+          </aside>
+          <section>
+            <h2 class="recipe__subtitle">Ingredients</h2>
+            <ul class="recipe__list recipe__list--unordered">
+              <li class="recipe__item">2-3 large eggs</li>
+              <li class="recipe__item">Salt, to taste</li>
+              <li class="recipe__item">Pepper, to taste</li>
+              <li class="recipe__item">1 tablespoon of butter or oil</li>
+              <li class="recipe__item">
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </li>
+            </ul>
+          </section>
+
+          <hr class="recipe__divider" />
+
+          <section>
+            <h2 class="recipe__subtitle">Instructions</h2>
+            <ul class="recipe__list recipe__list--ordered">
+              <li class="recipe__item">
+                <span>
+                  <strong>Beat the eggs:</strong> In a bowl, beat the eggs with
+                  a pinch of salt and pepper until they are well mixed. You can
+                  add a tablespoon of water or milk for a fluffier texture.
+                </span>
+              </li>
+              <li class="recipe__item">
+                <span>
+                  <strong>Heat the pan:</strong> Place a non-stick frying pan
+                  over medium heat and add butter or oil.
+                </span>
+              </li>
+              <li class="recipe__item">
+                <span>
+                  <strong>Cook the omelette:</strong> Once the butter is melted
+                  and bubbling, pour in the eggs. Tilt the pan to ensure the
+                  eggs evenly coat the surface.
+                </span>
+              </li>
+              <li class="recipe__item">
+                <span>
+                  <strong>Add fillings (optional):</strong> When the eggs begin
+                  to set at the edges but are still slightly runny in the
+                  middle, sprinkle your chosen fillings over one half of the
+                  omelette.
+                </span>
+              </li>
+              <li class="recipe__item">
+                <span>
+                  <strong>Fold and serve:</strong> As the omelette continues to
+                  cook, carefully lift one edge and fold it over the fillings.
+                  Let it cook for another minute, then slide it onto a plate.
+                </span>
+              </li>
+              <li class="recipe__item">
+                <span>
+                  <strong>Enjoy:</strong> Serve hot, with additional salt and
+                  pepper if needed.
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          <hr class="recipe__divider" />
+
+          <section>
+            <h2 class="recipe__subtitle">Nutrition</h2>
+            <p>
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <table class="table">
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <th class="table__heading">Calories</th>
+                  <td class="table__cell">277kcal</td>
+                </tr>
+                <tr class="table__row">
+                  <th class="table__heading">Carbs</th>
+                  <td class="table__cell">0g</td>
+                </tr>
+                <tr class="table__row">
+                  <th class="table__heading">Protein</th>
+                  <td class="table__cell">20g</td>
+                </tr>
+                <tr class="table__row">
+                  <th class="table__heading">Fat</th>
+                  <td class="table__cell">22g</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          >Ruben de Man</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
