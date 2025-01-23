@@ -215,6 +215,7 @@ p {
 }
 
 .recipe__list--ordered .recipe__item::before {
+  min-width: 24px;
   content: counter(my-awesome-counter) ".";
   color: hsl(var(--clr-brown-800));
   font-weight: 700;
