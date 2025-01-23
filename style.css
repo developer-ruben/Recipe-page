@@ -91,7 +91,7 @@ body {
   min-height: 100vh;
   color: hsl(var(--clr-stone-600));
   font-size: var(--text-preset-4-size);
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
 }
 
 main {
@@ -167,6 +167,8 @@ p {
   color: hsl(var(--clr-rose-800));
   font-size: var(--text-preset-3-size);
   line-height: var(--text-preset-3-height);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .recipe__list {
@@ -209,6 +211,7 @@ p {
 .recipe__list--ordered .recipe__item {
   align-items: flex-start;
   counter-increment: my-awesome-counter;
+  gap: 1.6rem;
 }
 
 .recipe__list--ordered .recipe__item::before {
